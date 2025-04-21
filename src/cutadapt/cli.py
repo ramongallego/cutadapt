@@ -334,6 +334,8 @@ def get_argument_parser() -> ArgumentParser:
         help="Which type of report to print: 'full' or 'minimal'. Default: full")
     group.add_argument("--json", metavar="FILE",
         help="Dump report in JSON format to FILE")
+    group.add_argument("--output-mapfile", metavar="FILE",
+        help="Write adapter match information to a map file instead of generating FASTA/FASTQ output.")
     group.add_argument("-o", "--output", metavar="FILE",
         help="Write trimmed reads to FILE. FASTQ or FASTA format is chosen "
             "depending on input. Summary report is sent to standard output. "
